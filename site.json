@@ -13,10 +13,11 @@
   "hasSubscription": false,
   "effectiveDate": "",
   "accentColor": "",
+  "figmaUrl": "",
   "extraNotes": "",
   "storeUrl": null,
   "packageName": null,
   "platform": "android",
-  "siteUrl": null,
-  "hosting": null
+  "siteUrl": "https://myhealthcare-web.vercel.app",
+  "hosting": "vercel"
 }
