@@ -14,4 +14,5 @@ Current site URL (Vercel): `https://myhealthcare-web.vercel.app` — Privacy Pol
 ## Content
 
 - `site.json` holds the metadata the site was generated from, plus image credits (`images`).
-- Photos in `assets/img/*.jpg` are CC0 images from Wikimedia Commons; feature icons (`assets/img/*.svg`) and `assets/icon.svg` are original drawings.
+- Images use a 9:16 portrait format: `assets/img/screen-*.svg` are original 1080×1920 app-preview illustrations shown in CSS phone frames; replace them with real AI Health screenshots (same 9:16 size) once the app's own store listing is available.
+- Photos in `assets/img/*.jpg` are CC0 images from Wikimedia Commons, displayed cropped to 9:16; feature icons (`assets/img/*.svg`) and `assets/icon.svg` are original drawings.
