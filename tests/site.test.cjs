@@ -34,13 +34,15 @@ for (const page of pages) {
     const footer = html.match(/<footer>([\s\S]*?)<\/footer>/)[1];
     for (const destination of pages.slice(0, 3)) assert.ok(footer.includes(`href="${destination}"`));
     assert.doesNotMatch(html, /code12|lorem|todo|placeholder|AI Health|App891|firebase|admob/i);
-    assert.doesNotMatch(html, /<script|https?:\/\//i);
+    assert.doesNotMatch(html, /<script/i);
+    const absolute = [...html.matchAll(/https?:\/\/[^"\s<]+/gi)].map(m => m[0]);
+    for (const url of absolute) assert.ok(url.startsWith(`${metadata.siteUrl}/`), `Unexpected external URL: ${url}`);
   });
   test(`${page}: all local asset, page, and fragment links resolve`, () => {
     const html = read(page);
     for (const match of html.matchAll(/(?:href|src)="([^"]+)"/g)) {
       const target = match[1];
-      if (target.startsWith('mailto:')) continue;
+      if (target.startsWith('mailto:') || target.startsWith(`${metadata.siteUrl}/`)) continue;
       assert.ok(!target.startsWith('/'), `Must be relative: ${target}`);
       const [path, fragment] = target.split('#');
       const file = path ? resolve(root, dirname(page), path) : resolve(root, page);
@@ -50,10 +52,35 @@ for (const page of pages) {
   });
 }
 
-test('empty metadata does not create invented store links or a sitemap', () => {
+test('empty storeUrl does not create invented store links', () => {
   assert.equal(metadata.storeUrl, null);
-  assert.equal(metadata.siteUrl, null);
-  assert.equal(existsSync(resolve(root, 'sitemap.xml')), false);
   assert.doesNotMatch(read('index.html'), /play\.google|apps\.apple|Get it on Google Play/);
-  assert.equal(read('robots.txt'), 'User-agent: *\nAllow: /\n');
+});
+
+test('siteUrl drives sitemap, robots Sitemap line, and canonical URLs', () => {
+  const base = metadata.siteUrl;
+  assert.equal(base, 'https://myhealthcare-web.vercel.app');
+  assert.equal(read('robots.txt'), `User-agent: *\nAllow: /\nSitemap: ${base}/sitemap.xml\n`);
+  const sitemap = read('sitemap.xml');
+  const locs = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1]);
+  assert.deepEqual(locs, [`${base}/`, `${base}/policies.html`, `${base}/terms.html`]);
+  const expected = { 'index.html': `${base}/`, 'policies.html': `${base}/policies.html`, 'terms.html': `${base}/terms.html` };
+  for (const [page, url] of Object.entries(expected)) {
+    const html = read(page);
+    assert.ok(html.includes(`<link rel="canonical" href="${url}">`), `${page} canonical`);
+    assert.ok(html.includes(`<meta property="og:url" content="${url}">`), `${page} og:url`);
+  }
+  assert.doesNotMatch(read('404.html'), /rel="canonical"/);
+});
+
+test('feature illustrations are local, decorative, and sized', () => {
+  const html = read('index.html');
+  const imgs = [...html.matchAll(/<img class="card-art"[^>]*>/g)].map(m => m[0]);
+  assert.equal(imgs.length, 4);
+  for (const img of imgs) {
+    assert.match(img, /src="assets\/img\/[a-z]+\.svg"/);
+    assert.match(img, /alt=""/);
+    assert.match(img, /width="64" height="64"/);
+    assert.match(img, /loading="lazy"/);
+  }
 });
