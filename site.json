@@ -1,7 +1,7 @@
 {
   "appName": "AI Health",
   "tagline": "AI Health Care",
-  "description": "Take a more organized approach to your health with AI Health: Personal Care, your personal AI-powered health companion. Explore health concerns through photo analysis and symptom questions, keep your health information in one place, and receive personalized care guidance to support your daily routine.\n\n📸 UNDERSTAND YOUR HEALTH BETTER\n\nHave questions about your health? Explore potential health concerns with photo analysis, ask symptom-related questions, and interact with your AI assistant to get helpful information. Make it easier to understand your concerns and find relevant guidance.\n\n📋 YOUR HEALTH, ALL IN ONE PLACE\n\nKeep your health information organized in one convenient place. Maintain records, track changes over time, and set reminders that fit your daily routine. Stay informed about your health information without having to manage everything separately.\n\n💡 PERSONALIZED CARE GUIDANCE\n\nGet personalized care guidance with AI-powered insights, daily tips, and progress support. Explore helpful information based on your needs and build a more organized approach to your everyday health routine.\n\n👨‍👩‍👧 CARE FOR YOU AND YOUR FAMILY\n\nManage family profiles and keep important health information organized. Whether you're looking after yourself or supporting loved ones, AI Health helps you keep family care information accessible in one place.\n\nMAKE HEALTH MANAGEMENT MORE ORGANIZED\n\nWith AI Health: Personal Care, you can:\n\nExplore health concerns through photo analysis.\nAsk questions about symptoms using an AI assistant.\nKeep personal health records organized.\nTrack health changes over time.\nSet reminders that fit your routine.\nReceive AI-powered care guidance and daily tips.\nManage family profiles in one place.\n\nThis AI Health: Personal Care always needs your recommendation and feedback to be immensely improved. We’d like to receive further suggestions from our beloved users with a deep sincerity. Thank you very much ❤️\n\n📸 UNDERSTAND YOUR HEALTH BETTER\n\n📋 YOUR HEALTH, ALL IN ONE PLACE\n\n💡 PERSONALIZED CARE GUIDANCE\n\n👨‍👩‍👧 CARE FOR YOU AND YOUR FAMILY\n\nMAKE HEALTH MANAGEMENT MORE ORGANIZED\n\nWith AI Health: Personal Care, you can:",
+  "description": "Take a more organized approach to your health with AI Health: Personal Care, your personal AI-powered health companion. Explore health concerns through photo analysis and symptom questions, keep your health information in one place, and receive personalized care guidance to support your daily routine.\n\n📸 UNDERSTAND YOUR HEALTH BETTER\n\nHave questions about your health? Explore potential health concerns with photo analysis, ask symptom-related questions, and interact with your AI assistant to get helpful information. Make it easier to understand your concerns and find relevant guidance.\n\n📋 YOUR HEALTH, ALL IN ONE PLACE\n\nKeep your health information organized in one convenient place. Maintain records, track changes over time, and set reminders that fit your daily routine. Stay informed about your health information without having to manage everything separately.\n\n💡 PERSONALIZED CARE GUIDANCE\n\nGet personalized care guidance with AI-powered insights, daily tips, and progress support. Explore helpful information based on your needs and build a more organized approach to your everyday health routine.\n\n👨‍👩‍👧 CARE FOR YOU AND YOUR FAMILY\n\nManage family profiles and keep important health information organized. Whether you're looking after yourself or supporting loved ones, AI Health helps you keep family care information accessible in one place.\n\nMAKE HEALTH MANAGEMENT MORE ORGANIZED\n\nWith AI Health: Personal Care, you can:\n\nExplore health concerns through photo analysis.\nAsk questions about symptoms using an AI assistant.\nKeep personal health records organized.\nTrack health changes over time.\nSet reminders that fit your routine.\nReceive AI-powered care guidance and daily tips.\nManage family profiles in one place.\n\nThis AI Health: Personal Care always needs your recommendation and feedback to be immensely improved. We’d like to receive further suggestions from our beloved users with a deep sincerity. Thank you very much ❤️\n\n📸 UNDERSTAND YOUR HEALTH BETTER\n\n📋 YOUR HEALTH, ALL IN ONE PLACE\n\n💡 PERSONALIZED CARE GUIDANCE\n\n👨‍👩‍👧 CARE FOR YOU AND YOUR FAMILY\n\nMAKE HEALTH MANAGEMENT MORE ORGANIZED. Tham khoảo hình ảnh, content trong các app sau\n\napp reference: https://play.google.com/store/apps/details?id=com.vivekgowdas.AiDoc, https://play.google.com/store/apps/details?id=ai.nakedhealth.yourhealth",
   "features": [],
   "languages": [
     "en"
@@ -18,11 +18,13 @@
   "accentColor": "",
   "figmaUrl": "",
   "extraNotes": "",
-  "storeUrl": null,
-  "packageName": null,
+  "storeUrl": "https://play.google.com/store/apps/details?id=com.vivekgowdas.AiDoc",
+  "packageName": "com.vivekgowdas.AiDoc",
+  "store": "Google Play",
   "platform": "android",
   "siteUrl": "https://myhealthcare-web.vercel.app",
   "hosting": "vercel",
+  "_storeUrlNote": "storeUrl/packageName point to a listing from a different developer and app name, so the site does not link to it or use its images. Replace with the AI Health (INCAI) listing, then regenerate.",
   "images": [
     {
       "file": "assets/img/hero-care.jpg",
@@ -40,6 +42,18 @@
       "file": "assets/img/routine.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Healthy_breakfast_(Unsplash).jpg",
       "author": "Arek Adeoye",
+      "license": "CC0"
+    },
+    {
+      "file": "assets/img/daily-check.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Hands-coffee-smartphone-technology_(23698591814).jpg",
+      "author": "www.Pixel.la Free Stock Photos",
+      "license": "CC0"
+    },
+    {
+      "file": "assets/img/family.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Family_watching_beach_sunset_(Unsplash).jpg",
+      "author": "David Straight",
       "license": "CC0"
     }
   ]
