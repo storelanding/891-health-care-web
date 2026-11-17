@@ -4,71 +4,179 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AI Health — AI Health Care | Android App on Google Play</title>
-  <meta name="description" content="AI Health is an Android app on Google Play: your personal AI-powered health companion to explore health concerns, keep health records organized, and get personalized care guidance for you and your family.">
+  <meta name="description" content="AI Health is an Android app on Google Play: your personal AI-powered health companion. Ask an AI health assistant, explore concerns with photo analysis, keep health records and reminders in one place, and manage family profiles.">
+  <meta name="theme-color" content="#1559e6">
+  <meta property="og:type" content="website">
   <meta property="og:title" content="AI Health — AI Health Care | Android App on Google Play">
   <meta property="og:description" content="Your personal AI-powered health companion for Android, available on Google Play.">
   <meta property="og:url" content="https://myhealthcare-web.vercel.app/">
-  <meta property="og:image" content="https://myhealthcare-web.vercel.app/assets/img/hero-care.jpg">
+  <meta property="og:image" content="https://myhealthcare-web.vercel.app/assets/img/41834660-screenshot-06.png">
   <link rel="canonical" href="https://myhealthcare-web.vercel.app/">
-  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/img/2593c365-app-icon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/img/2593c365-app-icon.png">
   <link rel="stylesheet" href="assets/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "AI Health",
+    "description": "Your personal AI-powered health companion: photo analysis and symptom questions, health records and reminders, personalized care guidance and family profiles.",
+    "operatingSystem": "Android",
+    "applicationCategory": "HealthApplication",
+    "image": "https://myhealthcare-web.vercel.app/assets/img/2593c365-app-icon.png",
+    "url": "https://myhealthcare-web.vercel.app/",
+    "author": { "@type": "Organization", "name": "INCAI", "email": "ltinc9986@gmail.com" }
+  }
+  </script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
-  <header><div class="wrap header-inner"><a class="brand" href="index.html"><img src="assets/icon.svg" alt="" width="38" height="38">AI Health</a><nav aria-label="Main navigation"><a href="index.html" aria-current="page">Home</a><a href="policies.html">Privacy Policy</a><a href="terms.html">Terms</a></nav></div></header>
-  <main id="main" class="wrap">
-    <section class="hero" aria-labelledby="hero-title">
-      <div><span class="eyebrow">Android app · by INCAI</span><h1 id="hero-title">AI Health</h1><p class="tagline">AI Health Care</p><p class="lead">Take a more organized approach to your health. Explore health concerns through photo analysis and symptom questions, keep your health information in one place, and receive personalized care guidance for your daily routine.</p><p class="store-note"><span class="store-pill">Available on Google Play</span> for Android phones</p><a class="button" href="#features">Explore AI Health</a></div>
-      <div class="hero-visual">
-        <img class="tall-photo hero-photo" src="assets/img/hero-care.jpg" alt="A stethoscope resting on a paper health record next to a pen" width="1280" height="853">
-        <div class="phone phone-front"><img src="assets/img/screen-photo.svg" alt="AI Health photo analysis screen with a camera frame and a Take a photo button" width="1080" height="1920"></div>
-        <div class="phone phone-back"><img src="assets/img/screen-assistant.svg" alt="AI Health assistant chat screen asking follow-up questions about a symptom" width="1080" height="1920"></div>
+  <header><div class="wrap header-inner"><a class="brand" href="index.html"><img src="assets/img/2593c365-app-icon.png" alt="" width="40" height="40">AI Health</a><nav aria-label="Main navigation"><a href="index.html" aria-current="page">Home</a><a href="#features">Features</a><a href="#faq">FAQ</a><a href="policies.html">Privacy Policy</a><a href="terms.html">Terms</a></nav></div></header>
+
+  <main id="main">
+    <div class="hero-bg">
+      <section class="wrap hero" aria-labelledby="hero-title">
+        <div>
+          <img class="hero-icon" src="assets/img/2593c365-app-icon.png" alt="AI Health app icon: a white medical cross with the letters AI inside a heart held by a hand, on a blue background" width="84" height="84">
+          <h1 id="hero-title">AI Health</h1>
+          <p class="tagline">AI Health Care</p>
+          <p class="lead">Your personal AI-powered health companion for Android. Explore health concerns through photo analysis and symptom questions, keep your health information in one place, and receive personalized care guidance for your daily routine.</p>
+          <p><span class="store-pill"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 1.5v13l11-6.5z" fill="currentColor"/></svg>Available on Google Play · Android app</span></p>
+          <div class="hero-actions"><a class="button" href="#features">Explore the features</a><a class="button ghost" href="#get-app">Get the app</a></div>
+        </div>
+        <div class="hero-visual">
+          <img class="shot shot-back" src="assets/img/b88656b9-screenshot-05.png" alt="AI Health Assistant screen asking “How can I help with your health today?” with suggested questions" width="1080" height="1920">
+          <img class="shot shot-front" src="assets/img/6564931f-screenshot-01.png" alt="AI Health home screen with the AI health assistant card, Health Scan, Symptom Checker and today’s reminder" width="1080" height="1920">
+        </div>
+      </section>
+    </div>
+
+    <div class="wrap">
+      <ul class="highlights" aria-label="Highlights">
+        <li><img src="assets/img/explore.svg" alt="" width="44" height="44"><strong>Photo analysis</strong><span>Explore potential health concerns from a photo.</span></li>
+        <li><img src="assets/img/guidance.svg" alt="" width="44" height="44"><strong>AI assistant</strong><span>Ask symptom-related questions anytime.</span></li>
+        <li><img src="assets/img/organize.svg" alt="" width="44" height="44"><strong>Records &amp; reminders</strong><span>Your health information in one place.</span></li>
+        <li><img src="assets/img/family.svg" alt="" width="44" height="44"><strong>Family profiles</strong><span>Care for yourself and loved ones.</span></li>
+      </ul>
+    </div>
+
+    <section id="features" class="section" aria-labelledby="features-title">
+      <div class="wrap">
+        <div class="section-intro center"><span class="eyebrow">What you can do</span><h2 id="features-title">A more organized approach to your health</h2><p>Every screen in AI Health is built around one goal: making it easier to understand your concerns and keep everyday health information together.</p></div>
+
+        <article class="feature-row">
+          <div class="media"><img class="shot" src="assets/img/6564931f-screenshot-01.png" alt="Home screen showing Health Scan, Symptom Checker and a medication reminder" width="1080" height="1920" loading="lazy"></div>
+          <div class="copy"><span class="eyebrow">Understand</span><h3>Understand your health better</h3><p>Have questions about your health? Start from the home screen: explore potential health concerns with photo analysis, check symptoms, and see today’s reminders at a glance.</p><ul class="ticks"><li>Photo analysis to explore health concerns</li><li>Symptom questions to find relevant guidance</li><li>Today’s reminders right on the home screen</li></ul></div>
+        </article>
+
+        <article class="feature-row reverse">
+          <div class="media"><img class="shot" src="assets/img/b88656b9-screenshot-05.png" alt="AI Health Assistant chat screen with suggestions such as healthy lifestyle tips and reviewing health data" width="1080" height="1920" loading="lazy"></div>
+          <div class="copy"><span class="eyebrow">AI assistant</span><h3>Your AI health assistant</h3><p>Ask about what matters to you. Interact with your AI assistant to get helpful information about symptoms, everyday habits and your scan results, in plain language.</p><ul class="ticks"><li>Ask symptom-related questions in a chat</li><li>Get help understanding your scan results</li><li>Ask for healthy lifestyle tips</li></ul></div>
+        </article>
+
+        <article class="feature-row">
+          <div class="media"><img class="shot" src="assets/img/5241105e-screenshot-02.png" alt="My Health screen with profile details, health records for medications, allergies, conditions and vaccinations, and today’s reminders" width="1080" height="1920" loading="lazy"></div>
+          <div class="copy"><span class="eyebrow">Organize</span><h3>Your health, all in one place</h3><p>Keep your health information organized in one convenient place. Maintain records, track changes over time, and set reminders that fit your daily routine — without managing everything separately.</p><ul class="ticks"><li>Records for medications, allergies, conditions and vaccinations</li><li>Track health changes over time</li><li>Reminders that fit your routine</li></ul></div>
+        </article>
+
+        <article class="feature-row reverse">
+          <div class="media"><img class="shot" src="assets/img/2a033394-screenshot-03.png" alt="Care Advice screen with self-care and symptom monitoring suggestions and a Set a reminder button" width="1080" height="1920" loading="lazy"></div>
+          <div class="copy"><span class="eyebrow">Guidance</span><h3>Personalized care guidance</h3><p>Get personalized care guidance with AI-powered insights, daily tips and progress support. Turn suggestions into a reminder so they become part of your everyday routine.</p><ul class="ticks"><li>AI-powered care guidance based on your needs</li><li>Daily tips and progress support</li><li>Set a reminder straight from the advice</li></ul></div>
+        </article>
+
+        <article class="feature-row">
+          <div class="media"><img class="shot" src="assets/img/a855a1a6-screenshot-04.png" alt="Family Hub screen listing family member profiles with age, height, weight and reminders" width="1080" height="1920" loading="lazy"></div>
+          <div class="copy"><span class="eyebrow">Family</span><h3>Care for you and your family</h3><p>Manage family profiles and keep important health information organized. Whether you’re looking after yourself or supporting loved ones, family care information stays accessible in one place.</p><ul class="ticks"><li>Individual profiles for each family member</li><li>Reminders for every profile</li><li>Everything in one Family Hub</li></ul></div>
+        </article>
       </div>
     </section>
 
-    <section id="features" class="features" aria-labelledby="features-title">
-      <div class="section-intro"><span class="eyebrow">What you can do</span><h2 id="features-title">Understand. Organize. Care.</h2><p>Whether you are looking after yourself or supporting loved ones, AI Health keeps your everyday health information accessible in one place.</p></div>
-      <article class="feature-row">
-        <div class="media-pair"><img class="tall-photo" src="assets/img/daily-check.jpg" alt="A person checking their phone while holding a cup of coffee" width="960" height="640" loading="lazy"><div class="phone"><img src="assets/img/screen-photo.svg" alt="Photo analysis screen in AI Health" width="1080" height="1920" loading="lazy"></div></div>
-        <div><img class="card-art" src="assets/img/explore.svg" alt="" width="64" height="64" loading="lazy"><span class="eyebrow">Understand</span><h3>Understand your health better</h3><p>Explore potential health concerns with photo analysis, ask symptom-related questions, and interact with your AI assistant to get helpful information and find relevant guidance.</p></div>
-      </article>
-      <article class="feature-row reverse">
-        <div class="media-pair"><img class="tall-photo" src="assets/img/records.jpg" alt="Hands on a desk beside a laptop, a phone and a stethoscope" width="1280" height="758" loading="lazy"><div class="phone"><img src="assets/img/screen-records.svg" alt="Health records screen in AI Health with a chart of changes over time" width="1080" height="1920" loading="lazy"></div></div>
-        <div><img class="card-art" src="assets/img/organize.svg" alt="" width="64" height="64" loading="lazy"><span class="eyebrow">Organize</span><h3>Your health, all in one place</h3><p>Maintain personal health records, track changes over time, and set reminders that fit your daily routine — without managing everything separately.</p></div>
-      </article>
-      <article class="feature-row">
-        <div class="media-pair"><img class="tall-photo" src="assets/img/routine.jpg" alt="A bowl of granola with fruit and nuts" width="960" height="640" loading="lazy"><div class="phone"><img src="assets/img/screen-guidance.svg" alt="Daily tips and weekly progress screen in AI Health" width="1080" height="1920" loading="lazy"></div></div>
-        <div><img class="card-art" src="assets/img/guidance.svg" alt="" width="64" height="64" loading="lazy"><span class="eyebrow">Guidance</span><h3>Personalized care guidance</h3><p>Get AI-powered insights, daily tips, and progress support based on your needs, and build a more organized everyday health routine.</p></div>
-      </article>
-      <article class="feature-row reverse">
-        <div class="media-pair"><img class="tall-photo" src="assets/img/family.jpg" alt="Two people walking a dog along a beach at sunset" width="960" height="640" loading="lazy"><div class="phone"><img src="assets/img/screen-family.svg" alt="Family profiles screen in AI Health" width="1080" height="1920" loading="lazy"></div></div>
-        <div><img class="card-art" src="assets/img/family.svg" alt="" width="64" height="64" loading="lazy"><span class="eyebrow">Family</span><h3>Care for you and your family</h3><p>Manage family profiles and keep important health information organized and accessible, whether you are looking after yourself or supporting loved ones.</p></div>
-      </article>
+    <section class="section alt" aria-labelledby="banner-title">
+      <div class="wrap">
+        <div class="section-intro center"><span class="eyebrow">AI Health: Personal Care</span><h2 id="banner-title">Health management, more organized</h2></div>
+        <div class="banner"><img src="assets/img/41834660-screenshot-06.png" alt="AI Health: Personal Care banner with the app icon and three app screens: home, My Health and AI Health Assistant" width="1024" height="500" loading="lazy"></div>
+      </div>
     </section>
 
-    <section class="gallery-section" aria-labelledby="gallery-title">
-      <span class="eyebrow">App preview</span><h2 id="gallery-title">A look inside AI Health</h2>
-      <ul class="gallery">
-        <li><div class="phone"><img src="assets/img/screen-photo.svg" alt="Photo analysis screen" width="1080" height="1920" loading="lazy"></div><p>Photo analysis</p></li>
-        <li><div class="phone"><img src="assets/img/screen-assistant.svg" alt="AI assistant chat screen" width="1080" height="1920" loading="lazy"></div><p>Symptom questions</p></li>
-        <li><div class="phone"><img src="assets/img/screen-records.svg" alt="Health records and changes over time screen" width="1080" height="1920" loading="lazy"></div><p>Records &amp; tracking</p></li>
-        <li><div class="phone"><img src="assets/img/screen-reminders.svg" alt="Reminders screen with daily routine reminders" width="1080" height="1920" loading="lazy"></div><p>Reminders</p></li>
-        <li><div class="phone"><img src="assets/img/screen-guidance.svg" alt="Daily tips and progress screen" width="1080" height="1920" loading="lazy"></div><p>Daily tips</p></li>
-        <li><div class="phone"><img src="assets/img/screen-family.svg" alt="Family profiles screen" width="1080" height="1920" loading="lazy"></div><p>Family profiles</p></li>
-      </ul>
+    <section class="section" aria-labelledby="gallery-title">
+      <div class="wrap">
+        <div class="section-intro"><span class="eyebrow">App preview</span><h2 id="gallery-title">A look inside AI Health</h2><p>Swipe through the main screens of the app.</p></div>
+        <ul class="gallery">
+          <li><img class="shot" src="assets/img/6564931f-screenshot-01.png" alt="Home screen" width="1080" height="1920" loading="lazy"><p>Home</p></li>
+          <li><img class="shot" src="assets/img/5241105e-screenshot-02.png" alt="My Health records screen" width="1080" height="1920" loading="lazy"><p>Health records</p></li>
+          <li><img class="shot" src="assets/img/2a033394-screenshot-03.png" alt="Care Advice screen" width="1080" height="1920" loading="lazy"><p>Care guidance</p></li>
+          <li><img class="shot" src="assets/img/a855a1a6-screenshot-04.png" alt="Family Hub screen" width="1080" height="1920" loading="lazy"><p>Family Hub</p></li>
+          <li><img class="shot" src="assets/img/b88656b9-screenshot-05.png" alt="AI Health Assistant screen" width="1080" height="1920" loading="lazy"><p>AI assistant</p></li>
+        </ul>
+      </div>
     </section>
 
-    <section class="steps-section" aria-labelledby="steps-title">
-      <span class="eyebrow">How it works</span><h2 id="steps-title">Three simple steps</h2>
-      <ol class="steps">
-        <li><img src="assets/img/family.svg" alt="" width="48" height="48" loading="lazy"><h3>Set up your profiles</h3><p>Install AI Health on your Android phone and add profiles for yourself and your family.</p></li>
-        <li><img src="assets/img/explore.svg" alt="" width="48" height="48" loading="lazy"><h3>Ask and explore</h3><p>Use photo analysis and symptom questions with your AI assistant to explore health concerns.</p></li>
-        <li><img src="assets/img/organize.svg" alt="" width="48" height="48" loading="lazy"><h3>Stay organized</h3><p>Keep records, track changes over time, set reminders and follow daily tips.</p></li>
-      </ol>
+    <section class="section alt" aria-labelledby="cap-title">
+      <div class="wrap">
+        <div class="section-intro"><span class="eyebrow">Everything in the app</span><h2 id="cap-title">With AI Health you can</h2></div>
+        <ul class="ticks capabilities">
+          <li>Explore health concerns through photo analysis</li>
+          <li>Ask questions about symptoms using an AI assistant</li>
+          <li>Keep personal health records organized</li>
+          <li>Track health changes over time</li>
+          <li>Set reminders that fit your routine</li>
+          <li>Receive AI-powered care guidance and daily tips</li>
+          <li>Manage family profiles in one place</li>
+        </ul>
+      </div>
     </section>
 
-    <section id="contact" class="contact"><span class="eyebrow">Contact</span><h2>We'd love your feedback.</h2><p>AI Health keeps improving with suggestions from its users. Send your questions and ideas to INCAI.</p><a href="mailto:ltinc9986@gmail.com">ltinc9986@gmail.com</a></section>
+    <section class="section" aria-labelledby="steps-title">
+      <div class="wrap">
+        <div class="section-intro"><span class="eyebrow">How it works</span><h2 id="steps-title">Three simple steps</h2></div>
+        <ol class="steps">
+          <li><img src="assets/img/family.svg" alt="" width="52" height="52" loading="lazy"><h3>Set up your profiles</h3><p>Install AI Health on your Android phone and add profiles for yourself and your family.</p></li>
+          <li><img src="assets/img/explore.svg" alt="" width="52" height="52" loading="lazy"><h3>Ask and explore</h3><p>Use photo analysis and symptom questions with your AI assistant to explore health concerns.</p></li>
+          <li><img src="assets/img/organize.svg" alt="" width="52" height="52" loading="lazy"><h3>Stay organized</h3><p>Keep records, track changes over time, set reminders and follow daily tips.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section alt" aria-labelledby="audience-title">
+      <div class="wrap">
+        <div class="section-intro"><span class="eyebrow">Who it’s for</span><h2 id="audience-title">For you and the people you care about</h2></div>
+        <div class="audience">
+          <article><img src="assets/img/daily-check.jpg" alt="A person checking their phone while holding a cup of coffee" width="960" height="640" loading="lazy"><div><h3>Your everyday routine</h3><p>For anyone who wants a more organized approach to their own health: questions answered, records kept and reminders that fit the day.</p></div></article>
+          <article><img src="assets/img/family.jpg" alt="Two people walking a dog along a beach at sunset" width="960" height="640" loading="lazy"><div><h3>Families and caregivers</h3><p>For people supporting loved ones, with family profiles that keep important health information accessible in one place.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section" aria-labelledby="faq-title">
+      <div class="wrap">
+        <div class="section-intro center"><span class="eyebrow">FAQ</span><h2 id="faq-title">Frequently asked questions</h2></div>
+        <div class="faq">
+          <details><summary>What is AI Health?</summary><p>AI Health is an Android app on Google Play: a personal AI-powered health companion that helps you explore health concerns, keep your health information in one place and receive personalized care guidance.</p></details>
+          <details><summary>What can I ask the AI assistant?</summary><p>You can ask symptom-related questions, ask for help understanding your scan results, or request healthy lifestyle tips. The assistant gives helpful information to make your concerns easier to understand.</p></details>
+          <details><summary>How does photo analysis work?</summary><p>Take or choose a photo in the app to explore potential health concerns, then continue with your AI assistant to get helpful information and relevant guidance.</p></details>
+          <details><summary>Can I keep records and reminders?</summary><p>Yes. Keep personal health records organized — such as medications, allergies, conditions and vaccinations — track changes over time and set reminders that fit your routine.</p></details>
+          <details><summary>Can I use it for my family?</summary><p>Yes. Family profiles let you keep important health information for yourself and your loved ones organized in one place.</p></details>
+          <details><summary>How is my information handled?</summary><p>Please read our <a href="policies.html">Privacy Policy</a> for details on how information is handled and how to contact us about your data.</p></details>
+          <details><summary>How can I send feedback or get support?</summary><p>AI Health keeps improving with suggestions from its users. Email us at <a href="mailto:ltinc9986@gmail.com">ltinc9986@gmail.com</a>.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section id="get-app" class="section alt" aria-labelledby="get-title">
+      <div class="wrap">
+        <div class="cta">
+          <img src="assets/img/2593c365-app-icon.png" alt="AI Health app icon" width="96" height="96" loading="lazy">
+          <div><span class="eyebrow">Get the app</span><h2 id="get-title">AI Health for Android</h2><p>Your personal AI-powered health companion, available on Google Play.</p></div>
+          <span class="store-pill"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 1.5v13l11-6.5z" fill="currentColor"/></svg>Available on Google Play</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact" aria-labelledby="contact-title">
+      <div class="wrap"><span class="eyebrow">Contact</span><h2 id="contact-title">We’d love your feedback</h2><p>Send your questions and suggestions to INCAI — every idea helps us improve AI Health.</p><a class="mail" href="mailto:ltinc9986@gmail.com">ltinc9986@gmail.com</a></div>
+    </section>
   </main>
+
   <footer><div class="wrap footer-inner"><p>© 2026 INCAI · Photos: Wikimedia Commons (CC0)</p><nav aria-label="Footer navigation"><a href="index.html">Home</a><a href="policies.html">Privacy Policy</a><a href="terms.html">Terms</a></nav><a href="mailto:ltinc9986@gmail.com">ltinc9986@gmail.com</a></div></footer>
 </body>
 </html>

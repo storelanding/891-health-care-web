@@ -24,33 +24,17 @@
   "platform": "android",
   "siteUrl": "https://myhealthcare-web.vercel.app",
   "hosting": "vercel",
-  "_storeUrlNote": "storeUrl/packageName point to a listing from a different developer and app name, so the site does not link to it or use its images. Replace with the AI Health (INCAI) listing, then regenerate.",
-  "imageFormat": "9:16 portrait — app screens are 1080x1920 SVG illustrations in CSS phone frames; photos are shown cropped to 9:16",
+  "_storeUrlNote": "storeUrl/packageName point to a listing from a different developer and app name (checked 2026-11-17: 'Dr.GPT: Ai-HealthCare Assitant' by 'Dev-V'), so the site does not link to it or use its images. Replace with the AI Health (INCAI) listing, then regenerate.",
+  "palette": { "brand": "#1559e6", "brand-2": "#5b84ff", "brand-dark": "#0c3fb3", "bg": "#f4f7ff", "text": "#13224d", "from": "app icon (blue gradient) + PM screenshots (pale-blue background, navy headings)" },
+  "imageFormat": "PM-uploaded 1080x1920 store screenshots (already include device frames) shown as rounded cards; 1024x500 feature graphic as banner",
   "images": [
-    { "file": "assets/img/screen-photo.svg", "source": "original illustration (app preview)", "license": "own work" },
-    { "file": "assets/img/screen-assistant.svg", "source": "original illustration (app preview)", "license": "own work" },
-    { "file": "assets/img/screen-records.svg", "source": "original illustration (app preview)", "license": "own work" },
-    { "file": "assets/img/screen-reminders.svg", "source": "original illustration (app preview)", "license": "own work" },
-    { "file": "assets/img/screen-guidance.svg", "source": "original illustration (app preview)", "license": "own work" },
-    { "file": "assets/img/screen-family.svg", "source": "original illustration (app preview)", "license": "own work" },
-    {
-      "file": "assets/img/hero-care.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Medical_Care.jpg",
-      "author": "DarkoStojanovic (Pixabay)",
-      "license": "CC0"
-    },
-    {
-      "file": "assets/img/records.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Computer-3343887_1280.jpg",
-      "author": "rawpixel",
-      "license": "CC0"
-    },
-    {
-      "file": "assets/img/routine.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Healthy_breakfast_(Unsplash).jpg",
-      "author": "Arek Adeoye",
-      "license": "CC0"
-    },
+    { "file": "assets/img/2593c365-app-icon.png", "source": "pm-upload", "use": "favicon, header, hero, CTA, OG" },
+    { "file": "assets/img/6564931f-screenshot-01.png", "source": "pm-upload", "feature": "Home / understand your health (hero)" },
+    { "file": "assets/img/5241105e-screenshot-02.png", "source": "pm-upload", "feature": "Health records & reminders" },
+    { "file": "assets/img/2a033394-screenshot-03.png", "source": "pm-upload", "feature": "Personalized care guidance" },
+    { "file": "assets/img/a855a1a6-screenshot-04.png", "source": "pm-upload", "feature": "Family profiles" },
+    { "file": "assets/img/b88656b9-screenshot-05.png", "source": "pm-upload", "feature": "AI health assistant (hero, back)" },
+    { "file": "assets/img/41834660-screenshot-06.png", "source": "pm-upload", "feature": "Feature graphic banner, OG image" },
     {
       "file": "assets/img/daily-check.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Hands-coffee-smartphone-technology_(23698591814).jpg",
