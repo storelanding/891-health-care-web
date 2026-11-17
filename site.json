@@ -25,7 +25,14 @@
   "siteUrl": "https://myhealthcare-web.vercel.app",
   "hosting": "vercel",
   "_storeUrlNote": "storeUrl/packageName point to a listing from a different developer and app name, so the site does not link to it or use its images. Replace with the AI Health (INCAI) listing, then regenerate.",
+  "imageFormat": "9:16 portrait — app screens are 1080x1920 SVG illustrations in CSS phone frames; photos are shown cropped to 9:16",
   "images": [
+    { "file": "assets/img/screen-photo.svg", "source": "original illustration (app preview)", "license": "own work" },
+    { "file": "assets/img/screen-assistant.svg", "source": "original illustration (app preview)", "license": "own work" },
+    { "file": "assets/img/screen-records.svg", "source": "original illustration (app preview)", "license": "own work" },
+    { "file": "assets/img/screen-reminders.svg", "source": "original illustration (app preview)", "license": "own work" },
+    { "file": "assets/img/screen-guidance.svg", "source": "original illustration (app preview)", "license": "own work" },
+    { "file": "assets/img/screen-family.svg", "source": "original illustration (app preview)", "license": "own work" },
     {
       "file": "assets/img/hero-care.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Medical_Care.jpg",
