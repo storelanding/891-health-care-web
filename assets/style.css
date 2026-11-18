@@ -136,7 +136,9 @@ footer p{margin:0;font-size:14px}
 .legal{max-width:780px;padding:64px 0 96px}
 .legal h1{font-size:clamp(38px,6vw,52px)}
 .legal h2{font-size:25px;margin-top:40px}
-.legal li{color:var(--muted)}
+.legal h3{font-size:19px;margin-top:24px}
+.legal ul{padding-left:22px}
+.legal li{color:var(--muted);margin-bottom:8px}
 .legal a{overflow-wrap:anywhere}
 .notice{padding:20px 24px;border-left:4px solid var(--brand);background:var(--soft);border-radius:0 14px 14px 0}
 .not-found{min-height:60vh;padding:80px 0}
